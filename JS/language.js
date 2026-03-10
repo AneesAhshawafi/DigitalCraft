@@ -2,6 +2,7 @@
 // Define translation dictionary for Arabic (ar) and English (en)
 const translations = {
     ar: {
+        "skip-link": "انتقل إلى المحتوى الرئيسي",
         "page-title": "الرئيسية",
         "nav-home": "الرئيسية",
         "nav-features": "المميزات",
@@ -96,6 +97,7 @@ const translations = {
     },
 
     en: {
+        "skip-link": "Skip to main content",
         "page-title": "Home",
         "nav-home": "Home",
         "nav-features": "Features",

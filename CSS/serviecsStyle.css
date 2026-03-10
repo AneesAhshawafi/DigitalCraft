@@ -1,11 +1,13 @@
 :root {
-  --main-color: #C5BAFF;
-  --secondary-color: #9400FF;
+  --main-color: #C4B5FD;
+  --secondary-color: #9333EA;
   --section-padding: 60px;
-  --section-background: #E4F1FF;
-  --element-background: #AED2FF;
+  --section-background: #F5F3FF;
+  --element-background: #EDE9FE;
   --section-margin-top: 80px;
-  --paragraph-color: #27005D;
+  --paragraph-color: #1E1B4B;
+  --primary: #6B21A8;
+  --hover-color: #7C3AED;
 }
 
 /* Start Services */
@@ -61,19 +63,19 @@
 }
 
 .services .services-content .srv .fa-code {
-  color: #1565C0;
+  color: #7C3AED;
 }
 
 .services .services-content .srv .fa-mobile-alt {
-  color: #00ACC1;
+  color: #9333EA;
 }
 
 .services .services-content .srv .fa-paint-brush {
-  color: #D81B60;
+  color: #6B21A8;
 }
 
 .services .services-content .srv .fa-book {
-  color: #8E24AA;
+  color: #8B5CF6;
 }
 
 .services .services-content .srv .text {

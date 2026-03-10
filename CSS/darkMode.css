@@ -1,38 +1,38 @@
-/* 🌙 Dark Mode Variables */
+/* 🌙 Dark Mode - Harmonious Purple Theme */
 :root.dark-mode {
-  --main-color: #0d0d0d;
-  /* لون تمييز رئيسي أكثر قتامة */
-  --secondary-color: #B794F6;
-  /* ثانوي أفتح من الأساسي */
-  --section-background: #1C1C2D;
-  /* خلفية الأقسام العامة */
-  --specila-headind-color: #2A2A40;
-  --ul-li-color: #00B0a0;
-  --specila-headind-p-color: #00B0a0;
-  --element-background: #2A2A40;
-  /* خلفية العناصر الفردية */
-  --paragraph-color: #E6E6FA;
-  /* لون الفقرات (رمادي مائل للبنفسجي) */
+  /* Dark Mode Variables - Complementary to Light Mode */
+  --primary: #A78BFA;
+  --secondary: #C4B5FD;
+  --accent: #7C3AED;
+  --accent-light: #4C1D95;
+  --background: #0F0D15;
+  --section-background: #1E1B4B;
+  --surface: #312E81;
+  --element-background: #4C1D95;
+  --specila-headind-color: #A78BFA;
+  --specila-headind-p-color: #C4B5FD;
+  --ul-li-color: #C4B5FD;
+  --paragraph-color: #E9D5FF;
+  --text-color: #E9D5FF;
+  --text-secondary: #A5B4FC;
+  --border-color: #5B21B6;
+  --hover-color: #A78BFA;
+  --focus-color: #C4B5FD;
+  --shadow-color: rgba(167, 139, 250, 0.25);
 
-  /* يمكنك تعديل ألوان إضافية حسب الحاجة */
-  /* مثال: ألوان الترويسة، الروابط، الأزرار، الشادوز ... */
-
-  --text-color: #FFFFFF;
-  /* لون النص الأساسي */
-  --hover-color: #C4AFFF;
-  /* لون عند تمرير المؤشر */
-  --border-color: #444459;
-  /* لون الإطار للعناصر */
+  /* Legacy variables for compatibility */
+  --main-color: var(--secondary);
+  --secondary-color: var(--accent);
 }
 
 /* تطبيق الألوان */
-/* body.dark-mode {
-  background-color: var(--section-background);
+body.dark-mode {
+  background-color: var(--background);
   color: var(--text-color);
 }
 
 body.dark-mode a {
-  color: var(--main-color);
+  color: var(--secondary);
 }
 
 body.dark-mode a:hover {
@@ -40,21 +40,22 @@ body.dark-mode a:hover {
 }
 
 body.dark-mode .footer {
-  background-color: var(--secondary-color);
-  color: var(--text-color);
+  background-color: var(--primary);
+  color: white;
 }
 
 body.dark-mode input,
 body.dark-mode textarea,
 body.dark-mode select {
-  background-color: var(--element-background);
+  background-color: var(--surface);
   color: var(--text-color);
   border: 1px solid var(--border-color);
 }
 
-body.dark-mode header,
-body.dark-mode nav,
-body.dark-mode .container,
-body.dark-mode .feat {
-  background-color: var(--element-background);
-} */
+body.dark-mode header {
+  background-color: var(--section-background);
+}
+
+body.dark-mode .landing {
+  background: linear-gradient(135deg, var(--section-background) 0%, var(--element-background) 50%, var(--surface) 100%);
+}

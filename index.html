@@ -31,6 +31,9 @@
 
 <body>
 
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link" data-lang="skip-link">انتقل إلى المحتوى الرئيسي</a>
+
     <!-- Header containing logo and navigation menu -->
     <header>
         <section class="container">
@@ -69,19 +72,21 @@
 
             </nav>
             <!-- Website logo -->
-            <a href="#" class="logo">
-                <img src="images/logo.png" alt="logo">
+            <a href="#" class="logo" aria-label="Digital Craft - الرئيسية">
+                <img src="images/logo.png" alt="Digital Craft logo" loading="lazy" width="120" height="40">
             </a>
         </section>
     </header>
 
     <!-- Landing (welcome) section -->
+    <main id="main-content">
     <div class="landing">
         <div class="intro-text">
             <h1 data-lang="landing-title">مرحباً بك في متجرنا الرقمي</h1>
             <p data-lang="landing-subtitle">أعمال رقمية تصنع فرقاً</p>
         </div>
     </div>
+    </main>
 
     <!-- Contact section -->
     <div class="contact" id="contact">
@@ -99,9 +104,9 @@
                 <!-- Social media links -->
                 <div class="social">
                     <span data-lang="contact-social">تواصل معنا عبر المنصات التالية:</span>
-                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>

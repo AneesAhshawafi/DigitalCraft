@@ -1,11 +1,13 @@
 :root {
-  --main-color: #C5BAFF;
-  --secondary-color: #9400FF;
+  --main-color: #C4B5FD;
+  --secondary-color: #9333EA;
   --section-padding: 60px;
-  --section-background: #E4F1FF;
-  --element-background:#AED2FF;
+  --section-background: #F5F3FF;
+  --element-background:#EDE9FE;
   --section-margin-top: 80px;
-  --paragraph-color: #27005D;
+  --paragraph-color: #1E1B4B;
+  --primary: #6B21A8;
+  --hover-color: #7C3AED;
 }
 /* Start Portfolio */
 .portfolio {

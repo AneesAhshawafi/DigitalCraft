@@ -1,14 +1,16 @@
 :root {
-  --main-color: #C5BAFF;
-  --secondary-color: #9400FF;
-  --section-background: #E4F1FF;
-  --element-background:#AED2FF;
-  --specila-headind-color:#AED2FF;
-  --specila-headind-p-color:#00B0a0;
-  --ul-li-color:#AED2FF;
-  --paragraph-color: #27005D;
+  --main-color: #C4B5FD;
+  --secondary-color: #9333EA;
+  --section-background: #F5F3FF;
+  --element-background:#EDE9FE;
+  --specila-headind-color:#7C3AED;
+  --specila-headind-p-color:#6B21A8;
+  --ul-li-color:#6B21A8;
+  --paragraph-color: #1E1B4B;
   --section-padding: 60px;
   --section-margin-top: 80px;
+  --primary: #6B21A8;
+  --hover-color: #7C3AED;
 }
 
 /* تنسيقات واجهات تسجيل الدخول والتسجيل واستعادة كلمة المرور */
