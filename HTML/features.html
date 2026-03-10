@@ -1,0 +1,151 @@
+<!-- Define document type and language -->
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- Character encoding -->
+    <meta charset='utf-8'>
+    <!-- Compatibility with Internet Explorer -->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <!-- Page title (used for translation) -->
+    <title data-lang="page-title">المميزات</title>
+    <!-- Responsive design for all screen sizes -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Import basic stylesheet files -->
+    <link rel="stylesheet" href="../CSS/GlobalRulesStyle.css">
+    <!-- Dark mode styles -->
+    <link rel="stylesheet" href="../CSS/darkMode.css">
+    <!-- Features page styles -->
+    <link rel="stylesheet" href="../CSS/featuresStyle.css">
+    <!-- Reset default browser styles -->
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS/normalize.css'>
+    <!-- Font Awesome icon library -->
+    <link rel="stylesheet" href="../CSS/all.min.css">
+
+    <!-- Load font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header: includes logo and navigation menu -->
+    <header>
+        <section class="container">
+
+            <!-- Navigation menu -->
+            <nav>
+
+                <!-- Hamburger menu icon (for mobile) -->
+                <i class="fas fa-bars toggle-menu" id="fa-bar"></i>
+                <!-- Navigation links -->
+                <ul id="menu">
+                    <!-- Login button -->
+                    <li><a href="index.html" data-lang="nav-home">الرئيسية</a></li>
+                    <li><a class="active" href="features.html" data-lang="nav-features">المميزات</a></li>
+                    <li><a href="services.html" data-lang="nav-services">الخدمات</a></li>
+                    <li><a href="portfilo.html" data-lang="nav-portfolio">أعمال سابقة</a></li>
+                    <li><a href="about.html" data-lang="nav-about">من نحن</a></li>
+                    <li><a href="index.html#contact" data-lang="nav-contact">تواصل بنا</a></li>
+                </ul>
+
+                <li>
+                    <a>
+                        <!-- Language selection dropdown -->
+                        <select id="language-selector">
+              <option value="ar">العربية</option>
+              <option value="en">English</option>
+            </select>
+                    </a>
+                </li>
+
+                <!-- Dark/light mode toggle button -->
+                <label class="theme-toggle" aria-label="Toggle dark or light mode">
+          <input type="checkbox" id="darkModeToggle">
+        </label>
+
+            </nav>
+
+            <!-- Website logo -->
+            <a href="#" class="logo">
+                <img src="../images/logo.png" alt="logo">
+            </a>
+        </section>
+    </header>
+
+    <!-- Features section -->
+    <div class="features" id="features">
+        <div class="container">
+
+            <!-- Section title -->
+            <h2 class="special-heading" data-lang="features-title">المميزات</h2>
+
+            <!-- Section description -->
+            <p id="special-heading-p" data-lang="features-subtitle">لا نكتفي بالانجاز، بل نركز على تقديم قيمة حقيقية</p>
+
+            <!-- Features content -->
+            <div class="features-content">
+
+                <!-- Feature: Fast delivery -->
+                <div class="feat">
+                    <i class="fas fa-bolt fa-3x"></i>
+                    <div class="text">
+                        <h3 data-lang="feature-speed">سرعة التنفيذ</h3>
+                        <p data-lang="feature-speed-desc">نلتزم بإنجاز المشاريع في وقت قياسي مع الحفاظ على أعلى معايير الجودة.</p>
+                    </div>
+                </div>
+
+                <!-- Feature: High quality -->
+                <div class="feat">
+                    <i class="fas fa-award fa-3x"></i>
+                    <div class="text">
+                        <h3 data-lang="feature-quality">جودة العمل</h3>
+                        <p data-lang="feature-quality-desc">نُقدّم أعمالًا بجودة احترافية مع عناية بأدق التفاصيل لتُظهر مشروعك بأفضل صورة.</p>
+                    </div>
+                </div>
+
+                <!-- Feature: Responsiveness and support -->
+                <div class="feat">
+                    <i class="fas fa-comments fa-3x"></i>
+                    <div class="text">
+                        <h3 data-lang="feature-support">استجابة سريعة ودعم مباشر</h3>
+                        <p data-lang="feature-support-desc">نضمن لك سرعة في الرد على استفساراتك ومتابعة مستمرة لأي طلبات أو تعديلات.</p>
+                    </div>
+                </div>
+
+                <!-- Feature: Flexibility in revisions -->
+                <div class="feat">
+                    <i class="fas fa-sliders-h fa-3x"></i>
+                    <div class="text">
+                        <h3 data-lang="feature-flexibility">مرونة في التعديلات</h3>
+                        <p data-lang="feature-flexibility-desc">نمنحك حرية التعديل وفق احتياجك لضمان أن المنتج النهائي يعكس رؤيتك بالكامل.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of .features-content -->
+        </div>
+        <!-- End of .container -->
+    </div>
+    <!-- End of .features -->
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2025 <span>DigitalCraft</span> <span data-lang="footer-text">جميع الحقوق محفوظة</span>
+    </div>
+
+    <!-- Load JavaScript files -->
+    <script src="../JS/navbar.js"></script>
+    <!-- Toggle mobile menu -->
+    <script src="../JS/language.js"></script>
+    <!-- Auto translation based on selected language -->
+    <script src="../JS/darkMode.js"></script>
+    <!-- Enable dark/light mode -->
+    <script src="../JS/authGuard.js"></script>
+    <!-- Page access protection -->
+    <script src="../JS/variables.js"></script>
+</body>
+
+</html>

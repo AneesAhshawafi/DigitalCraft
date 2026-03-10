@@ -1,0 +1,128 @@
+
+:root {
+  --main-color: #C5BAFF;
+  --secondary-color: #9400FF;
+  --section-padding: 60px;
+  --section-background: #E4F1FF;
+  --element-background:#AED2FF;
+  --section-margin-top: 80px;
+  --paragraph-color: #27005D;
+}
+
+/* Start Landing selection */
+.landing {
+    /* display: flex; */
+    background-color: var(--element-background);
+    background-size: cover;
+    height: calc(100vh - 69px);
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: relative;
+    z-index: -1;
+}
+
+.landing .intro-text {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 100%;
+
+}
+
+.landing .intro-text h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+}
+
+.landing .intro-text p {
+    font-size: 19px;
+    line-height: 1.8;
+
+}
+
+@media (max-width: 667px) {
+    .landing .intro-text h1 {
+        /* font-weight: 800; */
+        font-size: 30px;
+    }
+
+}
+
+/* End Landing selection */
+
+/* Start Contact */
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
+}
+
+.contact .info {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    text-align: center;
+
+}
+
+.contact .info p {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--secondary-color);
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+}
+
+.contact .info .link {
+    display: block;
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.contact .info .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.contact .info .social span {
+    margin-left: 15px;
+}
+.contact .info .social a {
+    margin-left: 15px;
+}
+
+.contact .info .social .fa-youtube {
+    color: red;
+}
+
+.contact .info .social .fa-facebook {
+    color: blue;
+}
+
+.contact .info .social .fa-twitter {
+    color: blueviolet;
+}
+
+@media (max-width: 767px) {
+
+    .contact .info .link {
+        font-size: 18px;
+    }
+
+    .contact .info p {
+        font-size: 20px;
+    }
+
+    .contact .info .social {
+        font-size: 12px;
+    }
+}
+
+/* End Contact */

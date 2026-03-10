@@ -1,0 +1,206 @@
+<!-- Document type definition and page language -->
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- Meta settings for page compatibility and viewport -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title data-lang="page-title">الخدمات</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- External stylesheet files -->
+    <link rel="stylesheet" href="../CSS/GlobalRulesStyle.css">
+    <link rel="stylesheet" href="../CSS/darkMode.css">
+    <link rel="stylesheet" href="../CSS/serviecsStyle.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS/normalize.css'>
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <!-- Loading Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Site header with logo and navigation menu -->
+    <header>
+        <section class="container">
+
+            <!-- Navigation menu -->
+            <nav>
+
+                <!-- Dropdown menu icon (for phones) -->
+                <i class="fas fa-bars toggle-menu" id="fa-bar"></i>
+                <!-- Links list -->
+                <ul id="menu">
+                    <!-- Login button -->
+                    <li><a href="index.html" data-lang="nav-home">الرئيسية</a></li>
+                    <li><a href="features.html" data-lang="nav-features">المميزات</a></li>
+                    <li><a class="active" href="services.html" data-lang="nav-services">الخدمات</a></li>
+                    <li><a href="portfilo.html" data-lang="nav-portfolio">أعمال سابقة</a></li>
+                    <li><a href="about.html" data-lang="nav-about">من نحن</a></li>
+                    <li><a href="index.html#contact" data-lang="nav-contact">تواصل بنا</a></li>
+                </ul>
+                <li>
+                    <a>
+                        <!-- Language selection dropdown -->
+                        <select id="language-selector">
+                            <option value="ar">العربية</option>
+                            <option value="en">English</option>
+                        </select>
+                    </a>
+                </li>
+                <!-- Dark mode toggle button -->
+                <label class="theme-toggle" aria-label="Toggle dark or light mode">
+                    <input type="checkbox" id="darkModeToggle">
+                </label>
+
+            </nav>
+            <!-- Site logo -->
+            <a href="#" class="logo">
+                <img src="../images/logo.png" alt="logo">
+            </a>
+        </section>
+    </header>
+
+
+    <!-- Services section -->
+    <div class="services" id="services">
+        <div class="container">
+            <!-- Section heading -->
+            <h2 class="special-heading" data-lang="services-title">خدماتنا</h2>
+            <p id="special-heading-p" data-lang="services-subtitle">نقدّم حلولًا رقمية متكاملة ترتقي بمشروعك إلى مستوى
+                جديد من الاحتراف
+            </p>
+
+            <!-- Three columns content -->
+            <div class="services-content">
+
+                <!-- First column -->
+                <div class="col">
+                    <!-- Service: Website development -->
+                    <div class="srv">
+                        <i class="fas fa-code fa-2x"></i>
+                        <div class="text">
+                            <h3 data-lang="service-web-title">تطوير مواقع متكاملة</h3>
+                            <p data-lang="service-web-desc">إنشاء مواقع إلكترونية تفاعلية ومرنة باستخدام تقنيات حديثة،
+                                متوافقة مع جميع الأجهزة ومحسنة لمحركات البحث.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service: Mobile app development -->
+                    <div class="srv">
+                        <i class="fas fa-mobile-alt fa-2x"></i>
+                        <div class="text">
+                            <h3 data-lang="service-app-title">تطوير تطبيقات الجوال</h3>
+                            <p data-lang="service-app-desc">تصميم وبرمجة تطبيقات Android وiOS بأداء ممتاز وتجربة مستخدم
+                                سلسة باستخدام Flutter أو React Native.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second column -->
+                <div class="col">
+                    <!-- Service: Logo design -->
+                    <div class="srv">
+                        <i class="fas fa-paint-brush fa-2x"></i>
+                        <div class="text">
+                            <h3 data-lang="service-logo-title">تصميم شعارات وهوية بصرية</h3>
+                            <p data-lang="service-logo-desc">تصميم شعارات فريدة وهوية مرئية احترافية تعكس جوهر علامتك
+                                التجارية وتُميزها في السوق.</p>
+                        </div>
+                    </div>
+
+                    <!-- Service: Book cover design -->
+                    <div class="srv">
+                        <i class="fas fa-book fa-2x"></i>
+                        <div class="text">
+                            <h3 data-lang="service-book-title">تصميم أغلفة كتب ومطبوعات</h3>
+                            <p data-lang="service-book-desc">تصميم غلافات كتب احترافية للطباعة أو النشر الإلكتروني،
+                                بأسلوب يجمع بين الجاذبية والبساطة.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third column (image) -->
+                <div class="col">
+                    <div class="image image-column">
+                        <img src="../images/services.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button to open the request form -->
+            <button id="openModalBtn" class="open-modal-btn" data-lang="service-request-btn">اطلب خدمة</button>
+        </div>
+    </div>
+
+    <!-- Popup modal for request form -->
+    <div id="modalOverlay" class="modal-overlay hidden">
+        <div class="modal-content">
+            <!-- Close modal button -->
+            <span class="close-modal" id="closeModalBtn">&times;</span>
+
+            <!-- Modal title -->
+            <h3 data-lang="modal-title">طلب خدمة</h3>
+
+            <!-- Service request input form -->
+            <form id="serviceForm" enctype="multipart/form-data">
+                <!-- Full name -->
+                <input type="text" name="name" placeholder="الاسم الكامل" required data-lang-placeholder="form-name">
+
+                <!-- Email -->
+                <input type="email" name="email" placeholder="البريد الإلكتروني" required
+                    data-lang-placeholder="form-email">
+
+                <!-- Service selection -->
+                <select name="service" required>
+                    <option value="" disabled selected data-lang="modal-select-placeholder">اختر الخدمة المطلوبة
+                    </option>
+                    <option data-lang="option-web" value="web">تطوير مواقع</option>
+                    <option data-lang="option-app" value="app">تطبيقات الجوال</option>
+                    <option data-lang="option-logo" value="logo">تصميم شعار وهوية</option>
+                    <option data-lang="option-book" value="book">تصميم غلاف كتاب</option>
+                </select>
+
+                <!-- Additional details -->
+                <textarea name="message" rows="4" placeholder="تفاصيل إضافية (اختياري)"
+                    data-lang-placeholder="form-message"></textarea>
+
+                <!-- File upload -->
+                <div class="google-like-upload">
+                    <label for="attachment" class="g-upload-label" data-lang="modal-upload">Attach File</label>
+                    <input type="file" name="attachment" id="attachment" accept=".pdf,.jpg,.jpeg,.png">
+                    <span id="g-file-name" data-lang="modal-no-file">No file chosen</span>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" data-lang="modal-submit">Send Request</button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Page footer -->
+    <div class="footer">
+        &copy; 2025 <span>DigitalCraft</span> <span data-lang="footer-text">All rights reserved</span>
+    </div>
+
+    <!-- JavaScript scripts -->
+    <script src="../JS/navbar.js"></script>
+    <!-- Mobile menu -->
+    <script src="../JS/language.js"></script>
+    <!-- Translation support -->
+    <script src="../JS/darkMode.js"></script>
+    <!-- Dark mode -->
+    <script src="../JS/RequistServiceForm.js"></script>
+    <!-- Request form logic -->
+    <script src="../JS/authGuard.js"></script>
+    <!-- Access restriction without login -->
+    <script src="../JS/variables.js"></script>
+
+</body>
+
+</html>

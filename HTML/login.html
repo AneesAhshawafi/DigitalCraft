@@ -1,0 +1,98 @@
+<!-- Specify the document type and default language -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Define character encoding -->
+    <meta charset='utf-8'>
+
+    <!-- Ensure compatibility with older Microsoft browsers -->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <!-- Page title with translation support via JavaScript -->
+    <title data-lang="page-title">الرئيسية</title>
+
+    <!-- Make the page responsive on all devices -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Core stylesheet files -->
+    <link rel="stylesheet" href="../CSS/GlobalRulesStyle.css">
+    <!-- General styling rules -->
+    <link rel="stylesheet" href="../CSS/darkMode.css">
+    <!-- Dark mode colors -->
+    <link rel="stylesheet" href="../CSS/loginStyle.css">
+    <!-- Login page design -->
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS/normalize.css'>
+    <!-- Normalize styles across browsers -->
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <!-- Font Awesome icons -->
+
+    <!-- Load Arabic font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header containing only the logo (no navigation menu) -->
+    <header class="-header">site
+        <div class="container">
+            <!-- Website logo -->
+            <a href="index.html" class="logo">
+                <img src="../images/logo.png" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <!-- Main section of the login interface -->
+    <main class="login-container">
+        <div class="login-card">
+            <!-- Form title (translatable) -->
+            <h2 data-lang="login-title">تسجيل الدخول</h2>
+
+            <!-- Login form -->
+            <form id="loginForm">
+                <!-- Email input field -->
+                <div class="input-group">
+                    <label for="email" data-lang="form-email">البريد الإلكتروني</label>
+                    <input type="email" id="email" placeholder="example@mail.com" data-lang-placeholder="form-email">
+                </div>
+
+                <!-- Password input field -->
+                <div class="input-group">
+                    <label for="password" data-lang="form-password">كلمة المرور</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" data-lang-placeholder="form-password">
+                    </div>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit" class="btn login-btn" data-lang="login-button">دخول</button>
+
+                <!-- Additional links -->
+                <div class="form-links">
+                    <!-- Forgot password link -->
+                    <a href="resetPassword.html" data-lang="forgot-password">نسيت كلمة المرور؟</a>
+
+                    <!-- Create new account link -->
+                    <a href="signup.html" data-lang="create-account">إنشاء حساب جديد</a>
+                </div>
+
+                <!-- Button to return to homepage -->
+                <a href="index.html" class="btn back-btn" data-lang="back-home">العودة للرئيسية</a>
+            </form>
+        </div>
+    </main>
+
+    <!-- Link JavaScript files -->
+    <script src="../JS/navbar.js"></script>
+    <!-- Control sidebar menu if present -->
+    <script src="../JS/language.js"></script>
+    <!-- Language switching and element translation -->
+    <script src="../JS/darkMode.js"></script>
+    <!-- Dark/light mode toggle functionality -->
+    <script src="../JS/loginForm.js"></script>
+    <!-- Login form validation -->
+</body>
+
+</html>

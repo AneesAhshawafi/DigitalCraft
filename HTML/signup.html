@@ -1,0 +1,94 @@
+<!-- Document type and page language definition -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic meta settings -->
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title data-lang="page-title">Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- CSS files for site styling -->
+    <link rel="stylesheet" href="../CSS/GlobalRulesStyle.css">
+    <link rel="stylesheet" href="../CSS/darkMode.css">
+    <link rel="stylesheet" href="../CSS/loginStyle.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS/normalize.css'>
+    <link rel="stylesheet" href="../CSS/all.min.css">
+
+    <!-- Load font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Page header: contains the logo -->
+    <header class="site-header">
+        <div class="container">
+            <!-- Logo link -->
+            <a href="index.html" class="logo">
+                <img src="../images/logo.png" alt="logo">
+            </a>
+        </div>
+    </header>
+
+    <!-- Main content: Signup form -->
+    <main class="login-container">
+        <div class="login-card">
+            <!-- Form title -->
+            <h2 data-lang="signup-title">Create Account</h2>
+
+            <!-- Signup form -->
+            <form id="signupForm">
+
+                <!-- Email input field -->
+                <div class="input-group">
+                    <label for="email" data-lang="form-email">Email</label>
+                    <input type="email" id="email" placeholder="example@mail.com" data-lang-placeholder="form-email" required>
+                </div>
+
+                <!-- Password input field -->
+                <div class="input-group">
+                    <label for="password" data-lang="form-password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" data-lang-placeholder="form-password" required>
+                    </div>
+                </div>
+
+                <!-- Confirm password input field -->
+                <div class="input-group">
+                    <label for="confirmPassword" data-lang="form-confirm-password">Confirm Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="confirmPassword" data-lang-placeholder="form-confirm-password" required>
+                    </div>
+                </div>
+
+                <!-- Submit button (create account) -->
+                <button type="submit" class="btn login-btn" data-lang="signup-button">Register</button>
+
+                <!-- Links below the form -->
+                <div class="form-links">
+                    <!-- Login link if user already has an account -->
+                    <a href="login.html" data-lang="have-account">Already have an account? Login</a>
+                </div>
+
+                <!-- Button to return to the homepage -->
+                <a href="index.html" class="btn back-btn" data-lang="back-home">Back to Home</a>
+            </form>
+        </div>
+    </main>
+
+    <!-- Related JavaScript files -->
+    <script src="../JS/navbar.js"></script>
+    <!-- Handle navigation menu -->
+    <script src="../JS/language.js"></script>
+    <!-- Language support -->
+    <script src="../JS/darkMode.js"></script>
+    <!-- Dark mode toggle -->
+    <script src="../JS/signUp.js"></script>
+    <!-- Signup logic -->
+
+</body>
+
+</html>

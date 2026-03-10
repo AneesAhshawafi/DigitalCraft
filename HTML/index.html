@@ -1,0 +1,128 @@
+<!-- Specify the document type and default language -->
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- Define character encoding -->
+    <meta charset='utf-8'>
+    <!-- Ensure compatibility with Internet Explorer -->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <!-- Page title with translation support -->
+    <title data-lang="page-title">الرئيسية</title>
+    <!-- Make layout responsive to different screen sizes -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Import global styles for the site -->
+    <link rel="stylesheet" href="../CSS/GlobalRulesStyle.css">
+    <!-- Dark mode styles -->
+    <link rel="stylesheet" href="../CSS/darkMode.css">
+    <!-- Styles specific to the homepage -->
+    <link rel="stylesheet" href="../CSS/indexStyle.css">
+    <!-- Normalize browser default styles -->
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS/normalize.css'>
+    <!-- Font Awesome icon library -->
+    <link rel="stylesheet" href="../CSS/all.min.css">
+
+    <!-- Google Fonts setup -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header containing logo and navigation menu -->
+    <header>
+        <section class="container">
+
+            <!-- Navigation menu -->
+            <nav>
+
+                <!-- Hamburger menu icon (for mobile) -->
+                <i class="fas fa-bars toggle-menu" id="fa-bar"></i>
+                <!-- Links list -->
+                <ul id="menu">
+                    <!-- Login button -->
+                    <li><a class="active" href="index.html" data-lang="nav-home">الرئيسية</a></li>
+                    <li><a href="features.html" data-lang="nav-features">المميزات</a></li>
+                    <li><a href="services.html" data-lang="nav-services">الخدمات</a></li>
+                    <li><a href="portfilo.html" data-lang="nav-portfolio">أعمال سابقة</a></li>
+                    <li><a href="about.html" data-lang="nav-about">من نحن</a></li>
+                    <li><a href="#contact" data-lang="nav-contact">تواصل بنا</a></li>
+                    <li id="login-li"><a href="login.html" data-lang="login-btn" class="login-buttn" id="login-link">تسجيل الدخول</a>
+                    </li>
+
+                </ul>
+                <li>
+                    <a>
+                        <!-- Language selection dropdown -->
+                        <select id="language-selector">
+                            <option value="ar">العربية</option>
+                            <option value="en">English</option>
+                        </select>
+                    </a>
+                </li>
+                <!-- Toggle button for dark/light mode -->
+                <label class="theme-toggle" aria-label="Toggle dark or light mode">
+                    <input type="checkbox" id="darkModeToggle">
+                </label>
+
+            </nav>
+            <!-- Website logo -->
+            <a href="#" class="logo">
+                <img src="../images/logo.png" alt="logo">
+            </a>
+        </section>
+    </header>
+
+    <!-- Landing (welcome) section -->
+    <div class="landing">
+        <div class="intro-text">
+            <h1 data-lang="landing-title">مرحباً بك في متجرنا الرقمي</h1>
+            <p data-lang="landing-subtitle">أعمال رقمية تصنع فرقاً</p>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <!-- Section title -->
+            <h2 class="special-heading" data-lang="contact-title">تواصل معنا</h2>
+            <!-- Section description -->
+            <p id="special-heading-p" data-lang="contact-subtitle">نحن هنا لنحوّل فكرتك إلى واقع</p>
+            <div class="info">
+                <!-- Email heading -->
+                <p class="label" data-lang="contact-label">يسعدنا تواصلك معنا عبر البريد الإلكتروني:</p>
+                <!-- Email address -->
+                <a href="mailto:digitalcraft@gmail.com?subject=Contact" class="link">digitalcraft2025@gmail.com</a>
+
+                <!-- Social media links -->
+                <div class="social">
+                    <span data-lang="contact-social">تواصل معنا عبر المنصات التالية:</span>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page footer -->
+    <div class="footer">
+        &copy; 2025 <span>DigitalCraft</span> <span data-lang="footer-text">All rights reserved</span>
+    </div>
+
+    <!-- Link JavaScript files -->
+    <script src="../JS/navbar.js"></script>
+    <!-- Control opening/closing of menu -->
+    <script src="../JS/language.js"></script>
+    <!-- Switch language and update texts -->
+    <script src="../JS/darkMode.js"></script>
+    <!-- Enable dark mode and save state -->
+    <script src="../JS/loginLogoutBtn.js"></script>
+    <!-- Login/logout button functionality -->
+    <script src="../JS/variables.js"></script>
+
+</body>
+
+</html>

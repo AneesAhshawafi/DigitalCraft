@@ -1,0 +1,127 @@
+<!-- Document type and page language set to Arabic -->
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- Set character encoding to UTF-8 -->
+    <meta charset='utf-8'>
+    <!-- Ensure compatibility with Internet Explorer -->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <!-- Page title, dynamically translated based on language -->
+    <title data-lang="page-title">من نحن</title>
+    <!-- Responsive design settings -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Import base CSS files -->
+    <link rel="stylesheet" href="../CSS/GlobalRulesStyle.css">
+    <!-- General rules styling -->
+    <link rel="stylesheet" href="../CSS/darkMode.css">
+    <!-- Dark mode styling -->
+    <link rel="stylesheet" href="../CSS/aboutStyle.css">
+    <!-- About page styling -->
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS/normalize.css'>
+    <!-- Normalize browser styles -->
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <!-- Font Awesome icons -->
+
+    <!-- Load font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header: includes logo, language switcher, dark mode toggle, and menu -->
+    <header>
+        <section class="container">
+
+            <!-- Navigation menu -->
+            <nav>
+
+                <!-- Dropdown menu icon (for mobile) -->
+                <i class="fas fa-bars toggle-menu" id="fa-bar"></i>
+                <!-- Navigation links -->
+                <ul id="menu">
+                    <!-- Login button -->
+                    <li><a href="index.html" data-lang="nav-home">الرئيسية</a></li>
+                    <li><a href="features.html" data-lang="nav-features">المميزات</a></li>
+                    <li><a href="services.html" data-lang="nav-services">الخدمات</a></li>
+                    <li><a href="portfilo.html" data-lang="nav-portfolio">أعمال سابقة</a></li>
+                    <li><a class="active" href="about.html" data-lang="nav-about">من نحن</a></li>
+                    <li><a href="index.html#contact" data-lang="nav-contact">تواصل بنا</a></li>
+                </ul>
+                <li>
+                    <a>
+                        <!-- Language selector dropdown -->
+                        <select id="language-selector">
+              <option value="ar">العربية</option>
+              <option value="en">English</option>
+            </select>
+                    </a>
+                </li>
+                <!-- Dark/light mode toggle -->
+                <label class="theme-toggle" aria-label="Toggle between dark and light mode">
+          <input type="checkbox" id="darkModeToggle">
+        </label>
+
+            </nav>
+            <!-- Website logo -->
+            <a href="#" class="logo">
+                <img src="../images/logo.png" alt="logo">
+            </a>
+        </section>
+    </header>
+
+    <!-- About section -->
+    <div class="about" id="about">
+        <div class="container">
+            <!-- Section heading -->
+            <h2 class="special-heading" data-lang="about-title">من نحن</h2>
+            <!-- Section subtitle -->
+            <p id="special-heading-p" data-lang="about-subtitle">البساطة سر التميز</p>
+
+            <!-- About content -->
+            <div class="about-content">
+
+                <!-- Illustrative image next to the text -->
+                <div class="image">
+                    <img src="../images/services.jpg" alt="Illustrative image">
+                </div>
+
+                <!-- Descriptive text -->
+                <div class="text">
+                    <p data-lang="about-text1">
+                        نحن فريق متخصص في تقديم خدمات رقمية احترافية تجمع بين الإبداع البصري والدقة البرمجية...
+                    </p>
+                    <hr>
+                    <p data-lang="about-text2">
+                        بخبرة واسعة في تصميم الشعارات، تطوير المواقع، وبرمجة التطبيقات...
+                    </p>
+                </div>
+
+            </div>
+            <!-- End of .about-content -->
+        </div>
+        <!-- End of .container -->
+    </div>
+    <!-- End of .about -->
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2025 <span>DigitalCraft</span> <span data-lang="footer-text">جميع الحقوق محفوظة</span>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="../JS/navbar.js"></script>
+    <!-- Mobile menu handling -->
+    <script src="../JS/language.js"></script>
+    <!-- Automatic text translation based on language -->
+    <script src="../JS/darkMode.js"></script>
+    <!-- Dark/light mode functionality -->
+    <script src="../JS/authGuard.js"></script>
+    <!-- Page protection from unauthorized access -->
+    <script src="../JS/variables.js"></script>
+</body>
+
+</html>

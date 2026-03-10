@@ -1,0 +1,141 @@
+<!-- Specify the document type and default page language (Arabic) -->
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- Define character encoding to avoid character issues -->
+    <meta charset='utf-8'>
+
+    <!-- Ensure compatibility with older Microsoft browsers -->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <!-- Page title translated using data-lang -->
+    <title data-lang="page-title">أعمال سابقة</title>
+
+    <!-- Viewport settings for responsive design on mobile devices -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Link CSS files for general styling, dark mode, and page-specific styles -->
+    <link rel="stylesheet" href="../CSS/GlobalRulesStyle.css">
+    <link rel="stylesheet" href="../CSS/darkMode.css">
+    <link rel="stylesheet" href="../CSS/portfiloStyle.css">
+
+    <!-- Normalize styles across all browsers -->
+    <link rel='stylesheet' type='text/css' media='screen' href='../CSS/normalize.css'>
+
+    <!-- Font Awesome library for beautiful icons -->
+    <link rel="stylesheet" href="../CSS/all.min.css">
+
+    <!-- Load Work Sans font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start of site header -->
+    <header>
+        <section class="container">
+
+            <!-- Navigation menu -->
+            <nav>
+
+                <!-- Hamburger menu icon (for mobile) -->
+                <i class="fas fa-bars toggle-menu" id="fa-bar"></i>
+                <!-- Links list -->
+                <ul id="menu">
+                    <!-- Login button -->
+                    <li><a href="index.html" data-lang="nav-home">الرئيسية</a></li>
+                    <li><a href="features.html" data-lang="nav-features">المميزات</a></li>
+                    <li><a href="services.html" data-lang="nav-services">الخدمات</a></li>
+                    <li><a class="active" href="portfilo.html" data-lang="nav-portfolio">أعمال سابقة</a></li>
+                    <li><a href="about.html" data-lang="nav-about">من نحن</a></li>
+                    <li><a href="index.html#contact" data-lang="nav-contact">تواصل بنا</a></li>
+                </ul>
+                <li>
+                    <a>
+                        <!-- Language selection dropdown -->
+                        <select id="language-selector">
+                            <option value="ar">العربية</option>
+                            <option value="en">English</option>
+                        </select>
+                    </a>
+                </li>
+                <!-- Dark/light mode toggle button -->
+                <label class="theme-toggle" aria-label="Toggle dark or light mode">
+                    <input type="checkbox" id="darkModeToggle">
+                </label>
+
+            </nav>
+            <!-- Site logo -->
+            <a href="#" class="logo">
+                <img src="../images/logo.png" alt="logo">
+            </a>
+        </section>
+    </header>
+
+    <!-- End of site header -->
+
+    <!-- Portfolio projects section -->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <!-- Section main heading -->
+            <h2 class="special-heading" data-lang="portfolio-title">أعمال سابقة</h2>
+            <p id="special-heading-p" data-lang="portfolio-subtitle">العمل المتقن يخلّد نفسه بمرور الزمن</p>
+
+            <!-- Full projects content -->
+            <div class="portfolio-content">
+
+                <!-- Project 1 -->
+                <div class="card">
+                    <img src="../images/web_site.jpg" alt="">
+                    <div class="info">
+                        <h3 data-lang="portfolio-project1-title">موقع تعليمي تفاعلي</h3>
+                        <p data-lang="portfolio-project1-desc">Developing a website offering educational courses with a
+                            responsive interface and a dedicated control panel for trainers and students.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card">
+                    <img src="../images/logos.jpg" alt="">
+                    <div class="info">
+                        <h3 data-lang="portfolio-project2-title">Logo and Visual Identity for a Startup</h3>
+                        <p data-lang="portfolio-project2-desc">Designing a professional logo and building a complete
+                            visual identity for a brand in the emerging tech sector.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card">
+                    <img src="../images/Portfolio-1.jpeg" alt="">
+                    <div class="info">
+                        <h3 data-lang="portfolio-project3-title">Task Management Application</h3>
+                        <p data-lang="portfolio-project3-desc">Designing and programming a mobile app to help users
+                            organize daily tasks and track progress easily.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <div class="footer">
+        &copy; 2025 <span>DigitalCraft</span> <span data-lang="footer-text">All rights reserved</span>
+    </div>
+
+    <!-- Load JavaScript files -->
+    <script src="../JS/navbar.js"></script>
+    <!-- Sidebar menu management -->
+    <script src="../JS/language.js"></script>
+    <!-- Multi-language support -->
+    <script src="../JS/darkMode.js"></script>
+    <!-- Enable dark mode -->
+    <script src="../JS/authGuard.js"></script>
+    <!-- Protect page from unauthorized access -->
+    <script src="../JS/variables.js"></script>
+</body>
+
+</html>
